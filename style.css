@@ -1,0 +1,235 @@
+/* Reset some default styles */
+
+/*UC Fonts:
+font-family: 'Montserrat';*/
+@import url('https://fonts.googleapis.com/css?family=Gentium+Book+Basic:400,400i,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@100..900&display=swap');
+/* http://meyerweb.com/eric/tools/css/reset/ */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f4f4;
+    color: #333;
+    font-family: 'Montserrat';
+    /*font-family: 'open UI', Tahoma, Geneva, Verdana, sans-serif;*/
+    line-height: 1.6;
+    width: 100%;
+}
+
+header {
+    align-items: center;
+    background-color: #e00122; /* Example blue background */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Adds shadow for better visibility */
+    color: rgb(255, 255, 255);
+    padding: 10px 20px;
+    width: 100%; /* Full width */
+}
+
+h1 {
+    text-align: center;
+}
+
+header nav ul {
+    align-items: center;
+	box-sizing: border-box;
+	color: rgb(255, 255, 255);
+	display: flex;
+	font-size: 24px;
+	font-weight: 400;
+	height: auto;
+	justify-content: space-between;
+	letter-spacing: normal;
+	line-height: 31.08px;
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: none;
+	margin-block-end: 55.3636px;
+	margin-block-start: 0px;
+	margin-bottom: 10px;
+	margin-inline-end: 0px;
+	margin-inline-start: 0px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 40px;
+	overflow-wrap: break-word;
+	padding-inline-start: 0px;
+	padding-left: auto;
+	padding-right: auto;
+	text-align: center;
+	text-rendering: optimizelegibility;
+	text-size-adjust: 100%;
+	unicode-bidi: 100%;
+	width: auto;
+    
+}
+
+header nav ul li {
+    align-items: center;
+    /*border-left: 2px solid rgb(255, 255, 255);
+	border-right: 2px solid rgb(255, 255, 255);*/
+    display: inline-block;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+header nav ul li a {
+    align-items: center;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    font-weight: bold;
+    padding-left: 2px;
+    padding-right: 2px;
+    text-decoration: none;
+}
+
+.glow-button a:hover {
+    text-shadow: (0 0 10px rgba(255, 255, 255, 0.8));;
+}
+
+.pad {
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 25%;
+    padding-right: 25%;
+}
+
+.featured-article, .issue {
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    margin: 15px 0;
+    padding: 20px;
+    
+}
+
+.featured-article h2, .issue h2 {
+    color: #0077cc;
+}
+
+.featured-article p, .issue ul {
+    margin-bottom: 10px;
+}
+
+.featured-article a, .issue a {
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.featured-article a:hover, .issue a:hover {
+    text-decoration: underline;
+}
+
+#search {
+    width: 100%; /* Ensures the search section fits in the center */
+    display: flex;
+    justify-content: center; /* Centers the search form */
+}
+ 
+#search form {
+    width: 100%; /* Takes up one-third of the body width */
+    display: flex;
+    align-items: center;
+}
+
+
+
+#search input[type="text"] {
+    flex-grow: 1; /* Allows the input to expand to fill the form */
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+}
+
+
+#search button {
+    border: none;
+    border-radius: 4px;
+    color: white;
+    cursor: pointer;
+    padding: 10px 20px;
+    background-color: #0077cc;
+}
+
+#search button:hover {
+    background-color: #005fa3;
+}
+
+footer {
+    background: #333;
+    color: #fff;
+    padding: 20px 10px;
+    text-align: center;
+}
+
+footer .footer-links a {
+    color: #fff;
+    text-decoration: none;
+}
+
+footer .footer-links a:hover {
+    text-decoration: underline;
+}
+ 
+
+
+
+.search-bar {
+    background-color: #f4f4f4; /* Light grey background for the search bar */
+    padding: 10px; /* Padding around the form */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    display: flex; /* Flexbox to align form elements neatly */
+    justify-content: center; /* Center the form in the search bar */
+    
+}
+
+.search-bar form {
+    width: 100%; /* Full width of the search bar container */
+    max-width: 500px; /* Maximum width of the form */
+}
+
+.search-bar input[type="text"] {
+    width: 80%; /* Takes up most of the form width */
+    padding: 8px; /* Padding inside the text field */
+    margin-right: 10px; /* Space between the text field and the button */
+    border: 1px solid #ccc; /* Light grey border */
+    border-radius: 5px; /* Rounded corners for the text field */
+}
+
+.search-bar button {
+    padding: 8px 16px; /* Padding inside the button */
+    background-color: #007bff; /* Bootstrap blue for the button */
+    color: white; /* Text color for the button */
+    border: none; /* No border for the button */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Cursor changes to pointer to indicate it's clickable */
+}
+
+.search-bar button:hover {
+    background-color: #0056b3; /* Darker blue on hover for better interaction */
+}
+
+
+.journal-title h1 {
+    text-align: center;
+    color: #fff; /* Or another color that fits your design */
+    font-size: 24px; /* Adjust size as needed */
+    margin-top: 20px; /* Space above the title */
+    font-weight: normal; /* Style as per your preference */
+    background-color: #e00122;
+}
+nav  {
+    list-style: none;
+    padding: 0;
+    margin: 0; /* Removes default margin */
+    background-color: #890519;
+    
+}
